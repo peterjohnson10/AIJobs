@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Trainer Hub | Guide to Mercor Roles</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navbar */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: var(--primary-hover);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        .hero .btn {
+            font-size: 1.1rem;
+            padding: 14px 32px;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        /* Cards Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .card p {
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+
+        .card ul {
+            list-style-type: none;
+            margin-bottom: 15px;
+        }
+
+        .card ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            color: var(--gray);
+        }
+
+        .card ul li::before {
+            content: "✓";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .price-tag {
+            font-weight: 700;
+            color: #10b981;
+            font-size: 1.1rem;
+        }
+
+        /* Steps */
+        .steps {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .step {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .step:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .step h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        footer h2 {
+            margin-bottom: 20px;
+        }
+
+        footer .btn {
+            background: white;
+            color: var(--dark);
+            margin: 20px 0;
+        }
+
+        footer .btn:hover {
+            background: #e2e8f0;
+            color: var(--dark);
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">AI Trainer Hub</div>
+                <a href="https://t.mercor.com/DBo0z" target="_blank" class="btn">Sign Up to Mercor</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Power the Future of AI with Your Professional Expertise</h1>
+            <p>Join Mercor’s global network of freelance AI Trainers. Apply your domain knowledge to shape the next generation of frontier AI models. Work remotely, set your own schedule, and earn highly competitive hourly rates.</p>
+            <a href="https://t.mercor.com/DBo0z" target="_blank" class="btn">Join the Talent Network Today</a>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">The Intersection of Human Intelligence and AI</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px auto; color: var(--gray); font-size: 1.1rem;">AI models don't learn in a vacuum—they need human judgment, professional standards, and deep domain context to improve. Mercor connects leading AI labs with over 30,000 global experts. You aren't just labeling data; you are teaching AI how experts think, evaluate, and solve complex problems.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>⚖️ Specialized Domain Experts</h3>
+                <p>AI needs specialists to review complex professional outputs. If you have an advanced degree or years of professional experience, your knowledge is in high demand.</p>
+                <ul>
+                    <li>Lawyers & Legal Experts</li>
+                    <li>Physicians & Pharmacists</li>
+                    <li>Financial Managers</li>
+                    <li>Cybersecurity Specialists</li>
+                </ul>
+                <div class="price-tag">Average Earnings: $80 – $150+/hour</div>
+            </div>
+
+            <div class="card">
+                <h3>💻 Software Engineers</h3>
+                <p>Tech experts are needed to test how well AI models write, review, architect, and debug code in realistic development environments.</p>
+                <ul>
+                    <li>Frontend & Backend Engineers</li>
+                    <li>Machine Learning Engineers</li>
+                    <li>Cloud Computing & DevOps</li>
+                    <li>Open Source Contributors</li>
+                </ul>
+                <div class="price-tag">Average Earnings: $70 – $150+/hour</div>
+            </div>
+
+            <div class="card">
+                <h3>📝 Generalist Experts</h3>
+                <p>Strong researchers, educators, and communicators are vital for baseline model behavior, testing for tone, accuracy, logic, and safety.</p>
+                <ul>
+                    <li>Generalist AI Trainers</li>
+                    <li>Content Evaluators</li>
+                    <li>Mathematics Educators</li>
+                    <li>Creative Writers</li>
+                </ul>
+                <div class="price-tag">Average Earnings: $40 – $100+/hour</div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="https://t.mercor.com/DBo0z" target="_blank" class="btn">Browse All Roles & Apply</a>
+        </div>
+    </section>
+
+    <section style="background: #e2e8f0;">
+        <div class="container">
+            <h2 class="section-title">How to Get Started</h2>
+            <div class="steps">
+                <div class="step">
+                    <h4>Step 1: Create Your Profile</h4>
+                    <p>Click our registration link to sign up. Upload your resume and clearly detail your skills, degrees, and domain expertise.</p>
+                </div>
+                <div class="step">
+                    <h4>Step 2: Complete Assessments</h4>
+                    <p>Once your profile is set up, you will take short AI evaluations or structured work samples to verify your specific skills.</p>
+                </div>
+                <div class="step">
+                    <h4>Step 3: Get Matched & Earn</h4>
+                    <p>Mercor’s automated matching system will pair you with leading AI labs. Receive project offers, review the expectations, and begin training AI!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>Ready to Teach the AI of Tomorrow?</h2>
+            <p style="color: #cbd5e1; font-size: 1.1rem;">Don't let your expertise sit idle. Monetize your knowledge and build the future of artificial intelligence.</p>
+            <a href="https://t.mercor.com/DBo0z" target="_blank" class="btn" style="font-size: 1.2rem; padding: 15px 40px;">Create Your Free Profile Now</a>
+            <p style="margin-top: 30px;"><em>Disclaimer: This site is an independent guide and uses referral links to direct applicants to the official Mercor platform.</em></p>
+        </div>
+    </footer>
+
+</body>
+</html>
