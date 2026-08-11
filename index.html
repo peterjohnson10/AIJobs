@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Trainer Hub | Guide to Mercor Roles</title>
+    <title>AI Trainer Hub | Guide to Mercor, Ethos, and Outlier Roles</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
@@ -76,6 +76,17 @@
             color: white;
         }
 
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+
         /* Hero Section */
         .hero {
             text-align: center;
@@ -111,6 +122,17 @@
             font-size: 2rem;
             margin-bottom: 40px;
         }
+        
+        .referral-banner {
+            background: #e0f2fe;
+            border: 1px solid #bae6fd;
+            color: #0369a1;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 1.05rem;
+        }
 
         /* Cards Layout */
         .grid {
@@ -124,6 +146,8 @@
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
         }
 
         .card h3 {
@@ -135,11 +159,12 @@
         .card p {
             color: var(--gray);
             margin-bottom: 15px;
+            flex-grow: 1;
         }
 
         .card ul {
             list-style-type: none;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .card ul li {
@@ -161,6 +186,7 @@
             font-weight: 700;
             color: #10b981;
             font-size: 1.1rem;
+            margin-bottom: 15px;
         }
 
         /* Steps */
@@ -230,7 +256,7 @@
         <div class="container">
             <nav>
                 <div class="logo">AI Trainer Hub</div>
-                <a href="https://t.mercor.com/DBo0z" target="_blank" class="btn">Sign Up to Mercor</a>
+                <a href="#platforms" class="btn">View Opportunities</a>
             </nav>
         </div>
     </header>
@@ -238,14 +264,63 @@
     <section class="hero">
         <div class="container">
             <h1>Power the Future of AI with Your Professional Expertise</h1>
-            <p>Join Mercor’s global network of freelance AI Trainers. Apply your domain knowledge to shape the next generation of frontier AI models. Work remotely, set your own schedule, and earn highly competitive hourly rates.</p>
-            <a href="https://t.mercor.com/DBo0z" target="_blank" class="btn">Join the Talent Network Today</a>
+            <p>Join the global network of freelance AI Trainers. Apply your domain knowledge to shape the next generation of frontier AI models. Work remotely, set your own schedule, and earn highly competitive hourly rates across the industry's top platforms.</p>
+            <a href="#platforms" class="btn">Explore Platforms Today</a>
+        </div>
+    </section>
+    
+    <section id="platforms" class="container" style="padding-bottom: 20px;">
+        <h2 class="section-title">Featured AI Training Platforms</h2>
+        
+        <div class="referral-banner">
+            <strong>Disclosure:</strong> The application buttons below for <strong>Ethos</strong> and <strong>Outlier</strong> contain my personal referral links. By clicking these links to sign up, your application will appear as a direct referral from me, which helps support my work in curating these opportunities!
+        </div>
+
+        <div class="grid">
+            <!-- Outlier Card -->
+            <div class="card">
+                <h3>📊 Outlier (Atlas)</h3>
+                <p>Outlier empowers subject matter experts to refine generative AI through data labeling, model evaluation, and prompt writing. <strong>Outlier Atlas</strong> is their premium tier, offering complex, higher-paying tasks for highly credentialed professionals.</p>
+                <ul>
+                    <li>Subject Matter Experts</li>
+                    <li>Code & Math Reviewers</li>
+                    <li>Creative Writers</li>
+                </ul>
+                <div class="price-tag">Up to $50/hour</div>
+                <a href="https://app.outlier.ai/expert/referrals/link/OwOmxPitM8QsY14umx-P5OUOQCM" target="_blank" class="btn" style="text-align: center;">Apply to Outlier (Referral)</a>
+            </div>
+
+            <!-- Ethos Card -->
+            <div class="card">
+                <h3>🎙️ Ethos</h3>
+                <p>Ethos captures your unique expertise using interactive AI voice agents. It then matches you with a wide range of opportunities across the economy—from specialized market research and expert calls to fractional and full-time roles.</p>
+                <ul>
+                    <li>Industry Professionals</li>
+                    <li>Medical & Legal Experts</li>
+                    <li>Fractional Consultants</li>
+                </ul>
+                <div class="price-tag">Rates vary by expertise</div>
+                <a href="https://agent.askethos.com/refer/cmj7di6c4kob" target="_blank" class="btn" style="text-align: center;">Apply to Ethos (Referral)</a>
+            </div>
+            
+            <!-- Mercor Card -->
+            <div class="card">
+                <h3>🤖 Mercor</h3>
+                <p>Mercor connects leading AI labs with over 30,000 global experts. You'll teach models how professionals think and solve complex problems in environments that mirror real-world professional workflows.</p>
+                <ul>
+                    <li>Specialized Domain Experts</li>
+                    <li>Software Engineers</li>
+                    <li>Generalist Trainers</li>
+                </ul>
+                <div class="price-tag">Up to $150+/hour</div>
+                <a href="https://t.mercor.com/DBo0z" target="_blank" class="btn btn-outline" style="text-align: center;">Apply to Mercor</a>
+            </div>
         </div>
     </section>
 
     <section class="container">
         <h2 class="section-title">The Intersection of Human Intelligence and AI</h2>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px auto; color: var(--gray); font-size: 1.1rem;">AI models don't learn in a vacuum—they need human judgment, professional standards, and deep domain context to improve. Mercor connects leading AI labs with over 30,000 global experts. You aren't just labeling data; you are teaching AI how experts think, evaluate, and solve complex problems.</p>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px auto; color: var(--gray); font-size: 1.1rem;">AI models don't learn in a vacuum—they need human judgment, professional standards, and deep domain context to improve. Platforms like the ones above need specialists to review complex professional outputs. You aren't just labeling data; you are teaching AI how experts think.</p>
         
         <div class="grid">
             <div class="card">
@@ -257,7 +332,6 @@
                     <li>Financial Managers</li>
                     <li>Cybersecurity Specialists</li>
                 </ul>
-                <div class="price-tag">Average Earnings: $80 – $150+/hour</div>
             </div>
 
             <div class="card">
@@ -269,7 +343,6 @@
                     <li>Cloud Computing & DevOps</li>
                     <li>Open Source Contributors</li>
                 </ul>
-                <div class="price-tag">Average Earnings: $70 – $150+/hour</div>
             </div>
 
             <div class="card">
@@ -281,11 +354,7 @@
                     <li>Mathematics Educators</li>
                     <li>Creative Writers</li>
                 </ul>
-                <div class="price-tag">Average Earnings: $40 – $100+/hour</div>
             </div>
-        </div>
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="https://t.mercor.com/DBo0z" target="_blank" class="btn">Browse All Roles & Apply</a>
         </div>
     </section>
 
@@ -294,16 +363,16 @@
             <h2 class="section-title">How to Get Started</h2>
             <div class="steps">
                 <div class="step">
-                    <h4>Step 1: Create Your Profile</h4>
-                    <p>Click our registration link to sign up. Upload your resume and clearly detail your skills, degrees, and domain expertise.</p>
+                    <h4>Step 1: Create Your Profiles</h4>
+                    <p>Click the application links above to sign up. Upload your resume and clearly detail your skills, degrees, and domain expertise on each platform.</p>
                 </div>
                 <div class="step">
                     <h4>Step 2: Complete Assessments</h4>
-                    <p>Once your profile is set up, you will take short AI evaluations or structured work samples to verify your specific skills.</p>
+                    <p>Depending on the platform, you will take short AI evaluations, structured work samples, or speak with an AI voice agent to verify your specific skills.</p>
                 </div>
                 <div class="step">
                     <h4>Step 3: Get Matched & Earn</h4>
-                    <p>Mercor’s automated matching system will pair you with leading AI labs. Receive project offers, review the expectations, and begin training AI!</p>
+                    <p>Automated matching systems will pair you with relevant projects from leading AI labs and enterprises. Review expectations and begin training!</p>
                 </div>
             </div>
         </div>
@@ -312,9 +381,9 @@
     <footer>
         <div class="container">
             <h2>Ready to Teach the AI of Tomorrow?</h2>
-            <p style="color: #cbd5e1; font-size: 1.1rem;">Don't let your expertise sit idle. Monetize your knowledge and build the future of artificial intelligence.</p>
-            <a href="https://t.mercor.com/DBo0z" target="_blank" class="btn" style="font-size: 1.2rem; padding: 15px 40px;">Create Your Free Profile Now</a>
-            <p style="margin-top: 30px;"><em>Disclaimer: This site is an independent guide and uses referral links to direct applicants to the official Mercor platform.</em></p>
+            <p style="color: #cbd5e1; font-size: 1.1rem; margin-bottom: 30px;">Don't let your expertise sit idle. Monetize your knowledge and build the future of artificial intelligence.</p>
+            <a href="#platforms" class="btn" style="font-size: 1.2rem; padding: 15px 40px;">Select a Platform to Begin</a>
+            <p style="margin-top: 40px;"><em>Disclaimer: This site is an independent guide and uses referral links to direct applicants to official platforms.</em></p>
         </div>
     </footer>
 
