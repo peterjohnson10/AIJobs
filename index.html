@@ -34,7 +34,7 @@
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -126,34 +126,51 @@
         /* Cards Layout */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
         }
 
         .card {
             background: white;
-            padding: 30px;
+            padding: 30px 25px;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
             display: flex;
             flex-direction: column;
+            position: relative;
+        }
+
+        .badge {
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #f59e0b;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .card h3 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             margin-bottom: 15px;
             color: var(--dark);
+            margin-top: 5px;
         }
 
         .card p {
             color: var(--gray);
             margin-bottom: 15px;
             flex-grow: 1;
+            font-size: 0.95rem;
         }
 
         .card ul {
             list-style-type: none;
             margin-bottom: 20px;
+            font-size: 0.95rem;
         }
 
         .card ul li {
@@ -174,7 +191,7 @@
         .price-tag {
             font-weight: 700;
             color: #10b981;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-bottom: 15px;
         }
 
@@ -262,47 +279,61 @@
         <h2 class="section-title">Featured AI Training Platforms</h2>
         
         <div class="referral-banner">
-            <strong>Disclosure:</strong> The application buttons below for <strong>Outlier</strong>, <strong>Ethos</strong>, and <strong>Mercor</strong> contain my personal referral links. By clicking these links to sign up, your application will appear as a direct referral from me, which helps support my work in curating these opportunities!
+            <strong>Disclosure:</strong> The application buttons below contain my personal referral links. By clicking these links to sign up, your application will appear as a direct referral from me, which helps support my work in curating these opportunities!
         </div>
 
         <div class="grid">
-            <!-- Outlier Card -->
-            <div class="card">
-                <h3>📊 Outlier / OpenClaw</h3>
-                <p>Outlier empowers subject matter experts to refine generative AI. <strong>OpenClaw Atlas</strong> is a specialized, highly technical tier within Outlier that offers complex, premium-paying tasks for highly credentialed professionals.</p>
+            <!-- OpenClaw Card -->
+            <div class="card" style="border: 2px solid #f59e0b;">
+                <div class="badge">Priority Choice</div>
+                <h3>📊 OpenClaw (Atlas)</h3>
+                <p>The highly technical, premium tier of Outlier. OpenClaw focuses on complex, high-paying tasks requiring advanced credentials, specialized coding, and deep technical logic.</p>
                 <ul>
-                    <li>Subject Matter Experts</li>
-                    <li>Code & Math Reviewers</li>
-                    <li>Technical & Creative Writers</li>
+                    <li>Software Engineers</li>
+                    <li>Advanced Math Reviewers</li>
+                    <li>Highly Credentialed SMEs</li>
                 </ul>
                 <div class="price-tag">Up to $100/hour</div>
-                <a href="https://app.outlier.ai/expert/referrals/link/OwOmxPitM8QsY14umx-P5OUOQCM" target="_blank" class="btn" style="text-align: center;">Apply to OpenClaw (Referral)</a>
+                <a href="https://app.outlier.ai/expert/referrals/link/OwOmxPitM8QsY14umx-P5OUOQCM" target="_blank" class="btn" style="text-align: center; background: #f59e0b; color: white;">Apply to OpenClaw</a>
             </div>
 
             <!-- Ethos Card -->
             <div class="card">
                 <h3>🎙️ Ethos</h3>
-                <p>Ethos captures your unique expertise using interactive AI voice agents. It then matches you with a wide range of opportunities across the economy—from specialized market research and expert calls to fractional and full-time roles.</p>
+                <p>Ethos captures your unique expertise using interactive AI voice agents, matching you with a wide range of opportunities—from market research to expert fractional consulting.</p>
                 <ul>
                     <li>Industry Professionals</li>
                     <li>Medical & Legal Experts</li>
                     <li>Fractional Consultants</li>
                 </ul>
                 <div class="price-tag">$70 – $100+/hour</div>
-                <a href="https://agent.askethos.com/refer/cmj7di6c4kob" target="_blank" class="btn" style="text-align: center;">Apply to Ethos (Referral)</a>
+                <a href="https://agent.askethos.com/refer/cmj7di6c4kob" target="_blank" class="btn" style="text-align: center;">Apply to Ethos</a>
             </div>
             
             <!-- Mercor Card -->
             <div class="card">
                 <h3>🤖 Mercor</h3>
-                <p>Mercor connects leading AI labs with over 30,000 global experts. You'll teach models how professionals think and solve complex problems in environments that mirror real-world professional workflows.</p>
+                <p>Mercor connects AI labs with over 30,000 global experts. You'll teach models how professionals think and solve complex problems in realistic professional workflows.</p>
                 <ul>
                     <li>Specialized Domain Experts</li>
                     <li>Software Engineers</li>
                     <li>Generalist Trainers</li>
                 </ul>
                 <div class="price-tag">Up to $150+/hour</div>
-                <a href="https://t.mercor.com/DBo0z" target="_blank" class="btn" style="text-align: center;">Apply to Mercor (Referral)</a>
+                <a href="https://t.mercor.com/DBo0z" target="_blank" class="btn" style="text-align: center;">Apply to Mercor</a>
+            </div>
+
+            <!-- Outlier General Card -->
+            <div class="card">
+                <h3>📝 Outlier (General)</h3>
+                <p>A great starting point for AI training. Involves broader data labeling, writing, prompt generation, and fact-checking across a wide variety of general topics.</p>
+                <ul>
+                    <li>General AI Trainers</li>
+                    <li>Creative Writers</li>
+                    <li>Fact-Checkers</li>
+                </ul>
+                <div class="price-tag">Entry to Mid-Level Rates</div>
+                <a href="https://app.outlier.ai/expert/referrals/link/ymWtmZY254A-JD6XNdE3qYuwxEs" target="_blank" class="btn" style="text-align: center; background: var(--gray);">Apply to Outlier</a>
             </div>
         </div>
     </section>
@@ -311,7 +342,7 @@
         <h2 class="section-title">The Intersection of Human Intelligence and AI</h2>
         <p style="text-align: center; max-width: 800px; margin: 0 auto 40px auto; color: var(--gray); font-size: 1.1rem;">AI models don't learn in a vacuum—they need human judgment, professional standards, and deep domain context to improve. Platforms like the ones above need specialists to review complex professional outputs. You aren't just labeling data; you are teaching AI how experts think.</p>
         
-        <div class="grid">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
             <div class="card">
                 <h3>⚖️ Specialized Domain Experts</h3>
                 <p>AI needs specialists to review complex professional outputs. If you have an advanced degree or years of professional experience, your knowledge is in high demand.</p>
